@@ -29,6 +29,14 @@ const App = () => {
         createRoutesFromElements(
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
+                
+                
+                {/* //to show how to redirect automatically
+                {/* <Route index element={<Navigate to="/dashboard" replace />} />
+                <Route path="/dashboard" element={<Dashboard />} />       */} 
+
+
+
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
                 <Route
